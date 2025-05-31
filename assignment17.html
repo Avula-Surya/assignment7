@@ -1,0 +1,139 @@
+<! reine HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Dashboard</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f0f2f5;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        width: 200px;
+        background-color: #28a745;
+        color: white;
+        padding: 20px;
+      }
+
+      .sidebar h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+      }
+
+      .sidebar ul li {
+        margin: 20px 0;
+      }
+
+      .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        opacity: 0.7;
+      }
+
+      .sidebar ul li a:hover {
+        opacity: 1;
+      }
+
+      /* Main Content */
+      .main-content {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .main-content h1 {
+        font-size: 28px;
+        color: #28a745;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      /* Stats Grid */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .stat-box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .stat-box h3 {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .stat-box p {
+        font-size: 32px;
+        color: #28a745;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h2>School Dashboard</h2>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Students</a></li>
+          <li><a href="#">Teachers</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Exams</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <h1>Welcome to the School Dashboard</h1>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <h3>Total Students</h3>
+            <p>500</p>
+          </div>
+          <div class="stat-box">
+            <h3>Total Teachers</h3>
+            <p>50</p>
+          </div>
+          <div class="stat-box">
+            <h3>Classes</h3>
+            <p>20</p>
+          </div>
+          <div class="stat-box">
+            <h3>Upcoming Exams</h3>
+            <p>5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
